@@ -1,4 +1,5 @@
 <!--index.wxml-->
+<!--页面文件-->
 <view class="container">
   <view  bindtap="bindViewTap" class="userinfo">
     <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>

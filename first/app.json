@@ -1,6 +1,8 @@
 {
   "pages":[
+    "pages/rem/rem",
     "pages/index/index",
+    "pages/databind/databind",
     "pages/logs/logs"
   ],
   "window":{

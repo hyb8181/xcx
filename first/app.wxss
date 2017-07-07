@@ -1,3 +1,4 @@
+/*样式表文件*/
 /**app.wxss**/
 .container {
   height: 100%;
