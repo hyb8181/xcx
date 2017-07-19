@@ -1,0 +1,57 @@
+<view class="container">
+  <view class="content">
+    <text>{{content}}</text>
+  </view>
+  <!--输出隐藏内容-->
+  <view class="content" hidden="{{flag?true:false}}">
+    <text>{{hidecontent}}</text>
+  </view>
+  <!--输出数字加法-->
+  <view class="content">
+    <text>{{num1}}+{{num2}}={{num1+num2}}</text>
+  </view>
+  <view>
+    <text>{{"hello"+user.name}}</text>
+  </view>
+  <!--条件渲染page39-->
+  <!--<view wx:if="{{condition}}"> True </view>
+  <view class="content" wx:if="{{length>3}}">
+    <text> {{"length>5"}}</text>
+  </view>-->
+  <!--列表渲染,重命名下标及变量名page40-->
+  <view class="content">
+    <view wx:for="{{user2}}" class="content" wx:for-index="idx" wx:for-item="user">
+      <text>{{idx}}-{{user.name}}-{{user.age}}</text>
+    </view>
+  </view>
+  <!--for循环乘法-->
+  <view class="content">
+    <view class="content" wx:for="{{chenfa}}" wx:for-item="i">
+      <view>
+        {{i}}*{{i}} = {{i*i}}
+      </view>
+    </view>
+  </view>
+  <template name="odd">
+    <view> odd </view>
+  </template>
+  <template name="even">
+    <view> even </view>
+  </template>
+
+  <block wx:for="{{[1, 2, 3, 4, 5]}}">
+    <template is="{{item % 2 == 0 ? 'even' : 'odd'}}" />
+  </block>
+  <!--<view class="content">
+    <text>{{"------分割线-------"}}</text>
+  </view>-->
+
+  <template is="msgItem" data="{{...item}}" />
+  <template name="msgItem">
+    <view>
+      <text> {{index}}: {{msg}} </text>
+      <text> Time: {{time}} </text>
+    </view>
+  </template>
+  <view id="tapTest" data-hi="WeChat" bindtap="tapName"> Click me! </view>
+</view>

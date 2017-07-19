@@ -1,0 +1,10 @@
+<!--rem.wxml-->
+<view class="container">
+  <view class="title">
+    <text>{{title}}</text>
+  </view>
+
+  <view class="ans">
+    <text>{{ans}}</text>
+  </view>
+</view>

@@ -1,0 +1,5 @@
+.content {
+  margin: 22rpx; /**内间距**/
+  padding: 20rpx; /**外间距**/
+  border: 1px solid #eee; /**边框**/
+}

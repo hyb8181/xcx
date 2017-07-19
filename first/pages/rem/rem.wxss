@@ -1,0 +1,13 @@
+/* rem.wxss */
+
+.title {
+  margin: 5px; /*外间距*/
+  padding: 2px; /*内间距*/
+  border: 1px solid #eee; /**边框**/
+}
+
+.ans {
+  margin: 0px;
+  padding: 20px;
+  border: 1px solid #eee; /**边框**/
+}
